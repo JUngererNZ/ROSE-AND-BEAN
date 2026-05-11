@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rose & Bean | Editorial Landing Page</title>
+  <meta name="description" content="Rose & Bean is a warm countryside coffee shop destination in Monteseel, known for exceptional coffee, fresh bakes, farm produce, and heartfelt hospitality." />
+  <meta property="og:title" content="Rose & Bean | Editorial Landing Page" />
+  <meta property="og:description" content="A warm countryside stop for coffee, cake, breakfasts, lunches, and slow moments in Monteseel." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root,
+    [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2.4rem, 1.2rem + 4vw, 5rem);
+      --text-hero: clamp(3.4rem, 1rem + 7vw, 7rem);
+
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --space-24: 6rem;
+      --space-32: 8rem;
+
+      --color-bg: #f7f1e8;
+      --color-surface: #fbf7f1;
+      --color-surface-2: #f0e5d9;
+      --color-surface-offset: #ead8c8;
+      --color-surface-offset-2: #ddc2af;
+      --color-surface-dynamic: #cfb29b;
+      --color-divider: rgba(72, 46, 31, 0.14);
+      --color-border: rgba(72, 46, 31, 0.18);
+      --color-text: #2e1f18;
+      --color-text-muted: #6b5649;
+      --color-text-faint: #9f8878;
+      --color-text-inverse: #fff8f2;
+      --color-primary: #8f4f38;
+      --color-primary-hover: #78412e;
+      --color-primary-active: #603324;
+      --color-primary-highlight: rgba(143, 79, 56, 0.12);
+      --color-accent: #b67d5d;
+      --color-deep: #4a2f22;
+      --shadow-sm: 0 1px 2px rgba(54, 33, 24, 0.05);
+      --shadow-md: 0 10px 30px rgba(54, 33, 24, 0.08);
+      --radius-sm: 0.375rem;
+      --radius-md: 0.65rem;
+      --radius-lg: 1rem;
+      --radius-xl: 1.5rem;
+      --radius-full: 9999px;
+      --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      --content-narrow: 720px;
+      --content-default: 1100px;
+      --content-wide: 1240px;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Manrope', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    *,:before,:after{box-sizing:border-box;margin:0;padding:0}
+    html{-moz-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;scroll-behavior:smooth;scroll-padding-top:var(--space-16)}
+    body{min-height:100dvh;line-height:1.6;font-family:var(--font-body);font-size:var(--text-base);color:var(--color-text);background:
+      radial-gradient(circle at top left, rgba(182,125,93,0.18), transparent 28%),
+      radial-gradient(circle at top right, rgba(143,79,56,0.10), transparent 24%),
+      linear-gradient(180deg, #fcf7f0 0%, var(--color-bg) 35%, #f4ece3 100%);
+    }
+    img,svg{display:block;max-width:100%;height:auto}
+    input,button{font:inherit;color:inherit}
+    a{color:inherit;text-decoration:none;transition:color var(--transition-interactive),background var(--transition-interactive),border-color var(--transition-interactive)}
+    button{cursor:pointer;border:none;background:none;transition:color var(--transition-interactive),background var(--transition-interactive),border-color var(--transition-interactive),transform var(--transition-interactive)}
+    h1,h2,h3{text-wrap:balance;line-height:1.04}
+    p{text-wrap:pretty;max-width:68ch}
+    :focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm)}
+    ::selection{background:rgba(143,79,56,.18);color:var(--color-text)}
+
+    .skip-link{position:absolute;left:var(--space-4);top:-100px;background:var(--color-primary);color:var(--color-text-inverse);padding:var(--space-3) var(--space-4);border-radius:var(--radius-full);z-index:100}
+    .skip-link:focus{top:var(--space-4)}
+    .container{width:min(calc(100% - 2rem), var(--content-default));margin-inline:auto}
+    .section{padding-block:clamp(var(--space-12), 9vw, var(--space-24))}
+    .eyebrow{font-size:var(--text-xs);letter-spacing:.22em;text-transform:uppercase;color:var(--color-text-muted)}
+    .divider{height:1px;background:var(--color-divider);width:100%}
+
+    .site-header{position:sticky;top:0;z-index:30;border-bottom:1px solid transparent;background:rgba(251,247,241,0.7);backdrop-filter:blur(14px)}
+    .site-header.scrolled{border-bottom-color:var(--color-divider);background:rgba(251,247,241,0.9)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) 0}
+    .brand{display:flex;align-items:center;gap:var(--space-3)}
+    .brand-mark{width:42px;height:42px;color:var(--color-deep)}
+    .brand-wordmark{display:flex;flex-direction:column;line-height:1}
+    .brand-wordmark strong{font-family:var(--font-display);font-size:1.5rem;font-weight:600;letter-spacing:.02em}
+    .brand-wordmark span{font-size:var(--text-xs);letter-spacing:.18em;text-transform:uppercase;color:var(--color-text-muted);margin-top:0.2rem}
+    .header-nav{display:flex;align-items:center;gap:var(--space-6)}
+    .header-nav a{font-size:var(--text-sm);color:var(--color-text-muted)}
+    .header-nav a:hover{color:var(--color-text)}
+
+    .hero{padding-top:clamp(var(--space-10), 9vw, var(--space-24));padding-bottom:clamp(var(--space-12), 10vw, var(--space-24))}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(var(--space-8), 5vw, var(--space-16));align-items:end}
+    .hero-copy{padding-right:var(--space-4)}
+    .hero h1{font-family:var(--font-display);font-size:var(--text-hero);font-weight:600;letter-spacing:-0.03em;max-width:12ch}
+    .hero p{font-size:var(--text-lg);color:var(--color-text-muted);margin-top:var(--space-5);max-width:32ch}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:var(--space-4);align-items:center;margin-top:var(--space-8)}
+    .btn-primary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 var(--space-6);border-radius:var(--radius-full);background:var(--color-primary);color:var(--color-text-inverse);font-size:var(--text-sm);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+    .btn-primary:hover{background:var(--color-primary-hover);transform:translateY(-1px)}
+    .hero-note{font-size:var(--text-sm);color:var(--color-text-muted)}
+
+    .hero-card{position:relative;padding:clamp(var(--space-6), 5vw, var(--space-10));background:linear-gradient(180deg, rgba(251,247,241,.9), rgba(234,216,200,.92));border:1px solid var(--color-border);border-radius:var(--radius-xl);box-shadow:var(--shadow-md);overflow:hidden;min-height:520px;display:flex;flex-direction:column;justify-content:space-between}
+    .hero-card::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at top, rgba(255,255,255,.55), transparent 36%),linear-gradient(135deg, rgba(182,125,93,.10), transparent 55%);pointer-events:none}
+    .hero-card-top,.hero-card-bottom{position:relative;z-index:1}
+    .hero-card .mini-label{font-size:var(--text-xs);letter-spacing:.18em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:var(--space-5)}
+    .hero-card h2{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:600;max-width:10ch}
+    .hero-list{display:grid;gap:var(--space-4);margin-top:var(--space-8)}
+    .hero-list li{display:flex;justify-content:space-between;gap:var(--space-4);padding-bottom:var(--space-3);border-bottom:1px solid var(--color-divider);font-size:var(--text-sm)}
+    .hero-list span:first-child{color:var(--color-text-muted);text-transform:uppercase;letter-spacing:.12em;font-size:.82em}
+    .hero-badge{align-self:flex-start;padding:var(--space-2) var(--space-4);border-radius:var(--radius-full);background:rgba(74,47,34,.08);font-size:var(--text-xs);letter-spacing:.16em;text-transform:uppercase;color:var(--color-deep)}
+
+    .about-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:var(--space-6);margin-top:var(--space-10)}
+    .feature-card{padding:var(--space-6);border-top:1px solid var(--color-border);background:linear-gradient(180deg, rgba(255,255,255,.36), rgba(255,255,255,.08))}
+    .feature-icon{width:34px;height:34px;color:var(--color-primary);margin-bottom:var(--space-4)}
+    .feature-card h3{font-size:var(--text-lg);font-family:var(--font-display);font-weight:600;margin-bottom:var(--space-3)}
+    .feature-card p{color:var(--color-text-muted)}
+
+    .story-wrap{display:grid;grid-template-columns:minmax(0, 1.05fr) minmax(260px, .95fr);gap:clamp(var(--space-8), 5vw, var(--space-16));align-items:start}
+    .story-copy h2,.section-title{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:600;max-width:12ch}
+    .story-copy p{margin-top:var(--space-5);color:var(--color-text-muted)}
+    .story-panel{padding:var(--space-8);background:rgba(255,250,244,.55);border:1px solid var(--color-border);border-radius:var(--radius-xl)}
+    .story-panel ul{list-style:none;display:grid;gap:var(--space-4)}
+    .story-panel li{display:flex;justify-content:space-between;gap:var(--space-4);padding-bottom:var(--space-3);border-bottom:1px solid var(--color-divider);font-size:var(--text-sm)}
+    .story-panel strong{font-weight:600}
+
+    .quote-band{position:relative;padding:clamp(var(--space-12), 8vw, var(--space-20));background:linear-gradient(135deg, rgba(74,47,34,0.94), rgba(108,69,50,0.92));border-radius:var(--radius-xl);overflow:hidden}
+    .quote-band::after{content:"";position:absolute;inset:auto -10% -20% auto;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle, rgba(255,255,255,.14), transparent 70%)}
+    .quote-band blockquote{position:relative;z-index:1;font-family:var(--font-display);font-size:clamp(2rem, 1.2rem + 3vw, 4rem);line-height:1.08;color:var(--color-text-inverse);max-width:16ch}
+    .quote-band footer{position:relative;z-index:1;margin-top:var(--space-6);font-size:var(--text-sm);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,248,242,.72)}
+
+    .reviews-grid{display:grid;grid-template-columns:repeat(2, minmax(0,1fr));gap:var(--space-6);margin-top:var(--space-10)}
+    .review-card{padding:var(--space-6);background:rgba(255,252,248,.58);border:1px solid rgba(72,46,31,.10);border-radius:var(--radius-lg)}
+    .review-card p{color:var(--color-text-muted)}
+    .review-card .name{display:block;margin-top:var(--space-4);font-size:var(--text-sm);font-weight:700;color:var(--color-text)}
+
+    .site-footer{padding-block:var(--space-12) var(--space-10);border-top:1px solid var(--color-divider)}
+    .footer-grid{display:grid;grid-template-columns:1fr auto minmax(260px, 340px);gap:var(--space-8);align-items:start}
+    .footer-brand p{margin-top:var(--space-3);font-size:var(--text-sm);color:var(--color-text-muted)}
+    .footer-nav{display:flex;gap:var(--space-5);flex-wrap:wrap;align-self:center}
+    .footer-nav a{font-size:var(--text-sm);color:var(--color-text-muted)}
+    .newsletter label{display:block;font-size:var(--text-xs);letter-spacing:.16em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:var(--space-3)}
+    .newsletter-row{display:flex;gap:var(--space-3);padding:var(--space-2);border:1px solid var(--color-border);border-radius:var(--radius-full);background:rgba(255,252,248,.74)}
+    .newsletter-row input{width:100%;min-height:44px;border:none;background:transparent;padding:0 var(--space-4);font-size:var(--text-sm)}
+    .newsletter-row input::placeholder{color:var(--color-text-faint)}
+    .newsletter-row button{min-width:118px;min-height:44px;padding:0 var(--space-4);border-radius:var(--radius-full);background:var(--color-deep);color:var(--color-text-inverse);font-size:var(--text-sm);font-weight:700}
+    .newsletter-row button:hover{background:#362117}
+
+    @media (max-width: 980px){
+      .hero-grid,.story-wrap,.footer-grid{grid-template-columns:1fr}
+      .hero-copy{padding-right:0}
+      .about-grid{grid-template-columns:1fr}
+      .reviews-grid{grid-template-columns:1fr}
+      .header-nav{gap:var(--space-4)}
+      .hero-card{min-height:auto}
+    }
+
+    @media (max-width: 720px){
+      .container{width:min(calc(100% - 1.25rem), var(--content-default))}
+      .header-inner{align-items:flex-start;flex-direction:column}
+      .header-nav{flex-wrap:wrap;gap:var(--space-3)}
+      .hero{padding-top:var(--space-8)}
+      .hero-actions{align-items:flex-start;flex-direction:column}
+      .story-panel,.feature-card,.review-card,.quote-band{padding:var(--space-5)}
+      .footer-nav{order:3}
+      .newsletter-row{flex-direction:column;border-radius:var(--radius-lg);padding:var(--space-3)}
+      .newsletter-row button{width:100%}
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      html{scroll-behavior:auto}
+      *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Rose and Bean home">
+        <svg class="brand-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rose and Bean logo">
+          <path d="M32 8C23 8 16 15.4 16 24.2C16 35.6 32 52 32 52C32 52 48 35.6 48 24.2C48 15.4 41 8 32 8Z" stroke="currentColor" stroke-width="2.3"/>
+          <path d="M32 18C28.8 18 26 20.7 26 24C26 27.2 28.8 30 32 30C35.2 30 38 27.2 38 24C38 20.7 35.2 18 32 18Z" stroke="currentColor" stroke-width="2.3"/>
+          <path d="M22 39C25 35.8 28.3 34.2 32 34.2C35.7 34.2 39 35.8 42 39" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-wordmark">
+          <strong>Rose &amp; Bean</strong>
+          <span>Monteseel</span>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#voices">Voices</a>
+        <a href="#visit">Visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">A countryside pause, beautifully brewed</p>
+          <h1>Where Monteseel slows down and the table feels like home.</h1>
+          <p>Rose &amp; Bean is more than a coffee stop — it is a warm, lingering destination for rich coffee, fresh bakes, hearty breakfasts, garden wandering, and the kind of hospitality people remember.</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="#visit">Plan your visit</a>
+            <span class="hero-note">Coffee, cake, high tea, fresh produce, farm-stall finds, and space for kids and pets.</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Rose and Bean highlights">
+          <div class="hero-card-top">
+            <p class="mini-label">A local favourite</p>
+            <h2>A hidden pause button on the world.</h2>
+            <ul class="hero-list" role="list">
+              <li><span>Known for</span><strong>Smooth coffee &amp; famous carrot cake</strong></li>
+              <li><span>Setting</span><strong>Honeytrails Farm, near Monteseel</strong></li>
+              <li><span>Atmosphere</span><strong>Quiet, homely, welcoming</strong></li>
+            </ul>
+          </div>
+          <div class="hero-card-bottom">
+            <span class="hero-badge">Pet friendly · Family friendly · Free parking</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="divider" aria-hidden="true"></div>
+        <div class="story-wrap" style="margin-top: clamp(var(--space-8), 6vw, var(--space-12));">
+          <div class="story-copy">
+            <p class="eyebrow">Why people stay longer</p>
+            <h2>Part coffee shop, part farm escape, part neighbourhood ritual.</h2>
+            <p>Guests return for the balance of exceptional food and genuine ease: thoughtful breakfasts, satisfying lunches, fresh baked goods, and a setting that invites conversation instead of rushing it. The space feels polished without pretence — warm service, beautiful gardens, and little discoveries tucked around every corner.</p>
+          </div>
+          <div class="story-panel" id="visit">
+            <ul>
+              <li><span>Best for</span><strong>Breakfast, lunch, tea &amp; cake</strong></li>
+              <li><span>Extras</span><strong>Garden shop, produce, crafts, farm stall</strong></li>
+              <li><span>Good to know</span><strong>Wheelchair friendly, no-wait feel, kids can roam</strong></li>
+              <li><span>Price feel</span><strong>Accessible, everyday treat</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-grid" id="experience">
+          <article class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M7 2v11a5 5 0 0 0 10 0V2"/>
+              <path d="M7 6h10"/>
+              <path d="M9 17h6"/>
+              <path d="M8 22h8"/>
+            </svg>
+            <h3>Food with integrity</h3>
+            <p>Rich coffee, moist cakes, hearty breakfasts, fresh lunches, and high teas that feel carefully made rather than mass-produced.</p>
+          </article>
+
+          <article class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M3 12c4-1 6-5 9-8 3 3 5 7 9 8-2 5-6 8-9 9-3-1-7-4-9-9Z"/>
+              <path d="M12 6c0 5-2 8-5 10"/>
+            </svg>
+            <h3>Country calm</h3>
+            <p>Set on peaceful farmland with gardens to stroll, room for children to play, and enough quiet to make conversation feel effortless.</p>
+          </article>
+
+          <article class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M12 21s-7-4.4-7-11a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 6.6-7 11-7 11Z"/>
+            </svg>
+            <h3>Hospitality that lands</h3>
+            <p>Friendly, unpretentious service and a host-led warmth that makes the whole visit feel personal, remembered, and easy to return to.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="voices">
+      <div class="container">
+        <div class="quote-band">
+          <blockquote>
+            “Rose &amp; Bean isn’t just a coffee stop — it’s a destination. One you’ll want to return to again and again.”
+          </blockquote>
+          <footer>— Inspired by guest reviews</footer>
+        </div>
+
+        <div class="reviews-grid" aria-label="Selected guest impressions">
+          <article class="review-card">
+            <p>“Set on the stunningly peaceful Honeytrails Farm, Rose and Bean is one of those rare places that instantly makes you exhale. The coffee is smooth, rich, and perfectly balanced, and every sweet and savoury option has been excellent.”</p>
+            <span class="name">Melanie Harvard</span>
+          </article>
+          <article class="review-card">
+            <p>“What a gem in Monteseel. From the moment you walk in, you’re welcomed by a relaxed, inviting atmosphere. Breakfast and lunch are delicious, the baked goods are fresh, and the produce makes it feel like more than just a coffee shop.”</p>
+            <span class="name">Lorraine Muller</span>
+          </article>
+          <article class="review-card">
+            <p>“My home away from home. Food is superb, coffee excellent, and the staff and owner are always happy and willing to meet my wants and needs.”</p>
+            <span class="name">Bernadette Schauerte</span>
+          </article>
+          <article class="review-card">
+            <p>“A local gem — fresh farm-to-table food, a cozy spot close to home, and shelves stocked with organic veg, dairy, meat, essentials, and local handmade goodies.”</p>
+            <span class="name">Natalie</span>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand" style="align-items:flex-start;">
+          <svg class="brand-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M32 8C23 8 16 15.4 16 24.2C16 35.6 32 52 32 52C32 52 48 35.6 48 24.2C48 15.4 41 8 32 8Z" stroke="currentColor" stroke-width="2.3"/>
+            <path d="M32 18C28.8 18 26 20.7 26 24C26 27.2 28.8 30 32 30C35.2 30 38 27.2 38 24C38 20.7 35.2 18 32 18Z" stroke="currentColor" stroke-width="2.3"/>
+            <path d="M22 39C25 35.8 28.3 34.2 32 34.2C35.7 34.2 39 35.8 42 39" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
+          </svg>
+          <span class="brand-wordmark">
+            <strong>Rose &amp; Bean</strong>
+            <span>Slow moments, well served</span>
+          </span>
+        </div>
+        <p>A refined single-page concept shaped from real guest praise: warm service, memorable coffee, and a setting that makes people stay.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#voices">Reviews</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
+      <form class="newsletter" action="#" method="post">
+        <label for="email">Newsletter</label>
+        <div class="newsletter-row">
+          <input id="email" name="email" type="email" placeholder="Your email address" aria-label="Email address" />
+          <button type="submit">Join list</button>
+        </div>
+      </form>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.querySelector('.site-header');
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 12);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  </script>
+</body>
+</html>
