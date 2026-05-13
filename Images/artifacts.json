@@ -1,0 +1,92 @@
+[
+    {
+        "src": "IMG-20260513-WA0006.jpg",
+        "alt": "Honeytrails shop interior showing retail shelves",
+        "category": "interior",
+        "label": "innershop1"
+    },
+    {
+        "src": "IMG-20260513-WA0007.jpg",
+        "alt": "Outdoor veranda seating area",
+        "category": "veranda",
+        "label": "verrander1"
+    },
+    {
+        "src": "IMG-20260513-WA0008.jpg",
+        "alt": "Close-up of products inside the shop",
+        "category": "interior",
+        "label": "innershop2"
+    },
+    {
+        "src": "IMG-20260513-WA0009.jpg",
+        "alt": "View of the veranda walkway",
+        "category": "veranda",
+        "label": "verrander2"
+    },
+    {
+        "src": "IMG-20260513-WA0010.jpg",
+        "alt": "Veranda perspective showing building details",
+        "category": "veranda",
+        "label": "verrander3"
+    },
+    {
+        "src": "IMG-20260513-WA0011.jpg",
+        "alt": "Exterior view of the main building facade",
+        "category": "exterior",
+        "label": "building-outer1"
+    },
+    {
+        "src": "IMG-20260513-WA0012.jpg",
+        "alt": "Wide shot of the facility exterior and surroundings",
+        "category": "exterior",
+        "label": "building-outer2"
+    },
+    {
+        "src": "IMG-20260513-WA0013.jpg",
+        "alt": "Seating on the veranda under the awning",
+        "category": "veranda",
+        "label": "verrander4"
+    },
+    {
+        "src": "IMG-20260513-WA0014.jpg",
+        "alt": "Veranda structural detail and layout",
+        "category": "veranda",
+        "label": "verrander5"
+    },
+    {
+        "src": "IMG-20260513-WA0015.jpg",
+        "alt": "The building facade from the garden view",
+        "category": "exterior",
+        "label": "building-outer3"
+    },
+    {
+        "src": "IMG-20260513-WA0016.jpg",
+        "alt": "Lush garden area adjacent to the shop",
+        "category": "garden",
+        "label": "garden1"
+    },
+    {
+        "src": "IMG-20260513-WA0017.jpg",
+        "alt": "Internal shop corner with product displays",
+        "category": "interior",
+        "label": "innershop3"
+    },
+    {
+        "src": "IMG-20260513-WA0018.jpg",
+        "alt": "Honeytrails entrance signage",
+        "category": "branding",
+        "label": "honeytrails"
+    },
+    {
+        "src": "logo.png",
+        "alt": "Honeytrails official logo",
+        "category": "branding",
+        "label": "logo"
+    },
+    {
+        "src": "dogfriendly.png",
+        "alt": "Dog friendly establishment icon",
+        "category": "icons",
+        "label": "dogfriendly"
+    }
+]
