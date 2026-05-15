@@ -182,3 +182,14 @@ Maintained logo in footer (lines 408-409) for brand consistency
 The logo with title now creates a strong visual introduction above the main hero content, immediately establishing the Rose & Bean brand identity. The implementation uses the site's existing design system for consistency and responsiveness.
 
 Would you like me to adjust the size, positioning, or styling of this logo+title section?
+
+
+review what changes were actually made:
+
+Added a gallery section with all 13 images from the Images directory
+Added a "Gallery" link to the navigation menu
+Added the rab-logo.jpg to the header (replacing the SVG logo)
+Added the rab-logo.jpg to the footer (replacing the SVG logo)
+Temporarily added and then removed a logo+title section above the hero
+Temporarily added and then removed a logo+title section in the hero
+Final state: Logo in header and footer, gallery section added
