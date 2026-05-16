@@ -193,3 +193,22 @@ Added the rab-logo.jpg to the footer (replacing the SVG logo)
 Temporarily added and then removed a logo+title section above the hero
 Temporarily added and then removed a logo+title section in the hero
 Final state: Logo in header and footer, gallery section added
+
+--------------------------------------------------------------------------------
+
+https://onepagelove.com/free-templates
+
+https://onepagelove.com/namari
+
+**could work wih this one to create a page: **
+https://onepagelove.com/avocado
+
+
+https://themewagon.com/themes/free-bootstrap-4-html5-coffee-website-template-coffee-blend/
+
+
+for Ashly, maybe??
+https://themewagon.com/themes/free-responsive-bootstrap-4-html5-food-website-template-cake/
+
+more an Ashly vibe??!!
+https://store.showit.com/designs/fennel-by-showit/
